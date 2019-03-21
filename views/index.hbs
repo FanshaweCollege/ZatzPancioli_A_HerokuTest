@@ -1,2 +1,28 @@
-<h1>{{title}}</h1>
-<p>{{title}}</p>
+
+<div id="homeContainer">
+
+    <div class="small-12 medium-12 large-12 columns">
+        <img src="images/{{images.mainImage}}" alt="" id="banner">
+    </div>
+
+    <div id="desc" class="small-12 medium-12 large-12 columns">
+        <h1>{{text.title}}</h1>
+        <h3>{{text.subTitle}}</h3>
+        <p>{{text.about}}</p>
+    </div>
+
+    <div class="gallery small-12 medium-12 large-12 columns text-center">
+        <div class="panel-main">
+            <img src="images/{{images.thumb1}}" id="selected">
+        </div>
+
+        <div class="thumbs">
+            <img src="images/{{images.thumb1}}" id="selected">
+            <img src="images/{{images.thumb2}}" id="selected">
+            <img src="images/{{images.thumb3}}" id="selected">
+            <img src="images/{{images.thumb4}}" id="selected">
+            <img src="images/{{images.thumb5}}" id="selected">
+        </div>
+    </div>
+
+</div>

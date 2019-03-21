@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "sass" : "node-sass sass/master.scss --output public/stylesheets --source-map-embed --source-map-contents --output-style compressed",
+    "watch:sass": "npm run sass -- --watch"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -11,6 +13,27 @@
     "express": "~4.16.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
-  }
+    "morgan": "~1.9.0",
+    "node-sass": "^4.11.0"
+  },
+  "description": "Heroku Test App",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annapancioli/ZatzPancioli_A_HerokuTest.git"
+  },
+  "keywords": [
+    "interactive",
+    "media",
+    "design",
+    "heroku",
+    "app"
+  ],
+  "author": "Anna Carolina Zatz Pancioli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annapancioli/ZatzPancioli_A_HerokuTest/issues"
+  },
+  "homepage": "https://github.com/annapancioli/ZatzPancioli_A_HerokuTest#readme"
 }

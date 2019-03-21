@@ -4,20 +4,26 @@
 <html>
   <head>
     <title>{{title}}</title>
+      <link rel="stylesheet" href="/stylesheets/foundation.css" type="text/css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/master.css' />
+    <link  rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400,600' />
   </head>
   <body>
-    <a href="/">Home</a>
 
-    <h1>Anything under me is being rendered dynamically from the route</h1>
+      <img src="images/{{images.logo}}" alt="" id="logo">
 
-    <!-- triple handle bars are a shorthand for a router-view -->
-    {{{body}}}
+      <!--<a href="/">Home</a>-->
 
-    <h3>I live under the router view</h3>
+      <!-- triple handle bars are a shorthand for a router-view -->
+      {{{body}}}
 
-    <a href="/user1">User 1</a>
-    <a href="/user2">User 2</a>
+      <!--<a href="/images">More images</a>-->
+
+    <script src="/javascripts/vendor/jquery.js"></script>
+    <script src="/javascripts/vendor/what-input.js"></script>
+    <script src="/javascripts/vendor/foundation.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/main.js"></script>
   </body>
 </html>

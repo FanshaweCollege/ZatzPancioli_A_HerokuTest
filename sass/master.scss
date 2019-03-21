@@ -1,9 +1,5 @@
 @import '_vars';
+@import 'modules/_header';
 @import 'modules/_home';
-@import 'modules/_users';
-
-a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
+@import 'modules/_images';
+@import 'modules/_footer';
