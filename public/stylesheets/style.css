@@ -1,9 +1,11 @@
-.row::before{
+.row{
   margin-top: 0;
   padding-top: 0;
+  float: none;
 }
 
 .columns{
   margin: 0;
   padding: 0;
+  float: none;
 }

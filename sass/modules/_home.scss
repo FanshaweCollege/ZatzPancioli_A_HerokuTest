@@ -30,16 +30,15 @@ a:hover{
 }
 
 .gallery {
-    margin: auto;
     border: white solid 5px;
+    max-width: 100vh;
     background: $bg-color2;
-    padding-bottom: 4%;
-    padding-top: 4%;
-  }
+    margin-left: 2%;
+}
   
   .panel-main img,
   .thumbs img {
-    width: 50%;
+    width: 100%;
     height: auto;
     cursor: pointer;
   }
