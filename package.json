@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app",
-    "sass" : "node-sass sass/master.scss --output public/stylesheets --source-map-embed --source-map-contents --output-style compressed",
-    "watch:sass": "npm run sass -- --watch"
+    "start": "node app"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

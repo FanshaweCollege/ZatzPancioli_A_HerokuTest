@@ -1,4 +1,4 @@
-<!-- this is index.html -->
+<!-- index.html -->
 
 <!DOCTYPE html>
 <html>
@@ -7,18 +7,25 @@
       <link rel="stylesheet" href="/stylesheets/foundation.css" type="text/css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/master.css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <link  rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400,600' />
   </head>
   <body>
 
       <img src="images/{{images.logo}}" alt="" id="logo">
 
-      <!--<a href="/">Home</a>-->
-
-      <!-- triple handle bars are a shorthand for a router-view -->
       {{{body}}}
 
-      <!--<a href="/images">More images</a>-->
+      <footer>
+        <p class="copy float-left">
+			    &copy; {{text.copy}}
+		    </p>
+        <ul class="float-right" id="socialMedia">
+          <li><a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a></li>
+          <li><a href="https://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a></li>
+      </ul>
+      </footer>
 
     <script src="/javascripts/vendor/jquery.js"></script>
     <script src="/javascripts/vendor/what-input.js"></script>
