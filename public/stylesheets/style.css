@@ -1,8 +1,9 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.row{
+  margin-top: 0;
+  padding-top: 0;
 }
 
-a {
-  color: #00B7FF;
+.columns{
+  margin: 0;
+  padding: 0;
 }

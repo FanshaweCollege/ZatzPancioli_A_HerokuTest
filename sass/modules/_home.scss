@@ -2,4 +2,154 @@ body{
     background: $bg-color;
     color: $text-color;
     font-size: 14px;
+    font-family: $font-text;
+}
+
+a{
+    text-decoration: none;
+    color: $text-color;
+    text-transform: uppercase;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1{
+    font-family: $font-title;
+    font-size: calc(32px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h3{
+    font-family: $font-text;
+    font-weight: 600;
+    font-size: calc(18px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+a:hover{
+    color: $hover-color;
+}
+
+i{
+    margin-right: 1%;
+}
+
+#banner{
+    width: 100%;
+    height: auto;
+}
+
+#desc{
+    padding-top: 13%;
+    padding-bottom: 13%;
+    padding-right: 7%;
+    padding-left: 7%;
+    h1{
+        padding-bottom: 1%;
+        border-bottom: 1px solid $text-color2;
+        color: $title-color;
+    }
+    h3{
+        padding-bottom: 8%;
+        color: $text-color2;
+    }
+    p{
+        color: $text-color;
+    }
+}
+
+#gallery {
+    padding-top: 3%;
+    max-width: 100vh;
+    background: $bg-color;
+    padding-right: 2%;
+    vertical-align: middle;
+}
+
+#mainImage{
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+@media (max-width: 780px) and (min-width:640px) {
+    #mainImage{
+        margin-bottom: 0;
+    }
+    #gallery {
+        padding-left: 2%;
+        padding-top: 13%;
+        padding-bottom: 13%;
+    }
+    #desc{
+        padding-bottom: 7%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #mainImage{
+        margin-bottom: 0;
+    }
+    #gallery {
+        padding-left: 2%;
+        padding-top: 0;
+    }
+    #desc{
+        padding-bottom: 10%;
+    }
+}
+  
+#mainImage img,
+.thumbs img {
+width: 100%;
+height: auto;
+cursor: pointer;
+}
+
+.thumbs {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-gap: 5px;
+}
+
+@keyframes fadeIn {
+to {
+    opacity: 1;
+}
+}
+  
+.fade-in {
+opacity: 0;
+animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+#featTitle{
+    margin-top: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: $title-color;
+    color: $bg-color;
+}
+
+#featBox{
+    font-size: calc(14px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
+    position: relative;
+    padding: 5%;
+    background-color: $bg-color2;
+    color: $bg-color;
+    li{
+        padding-bottom: 3%;
+    }
+    #last{
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #featTitle{
+        margin-top: 15%;
+    }
+    #first{
+        padding-top: 5%;
+    }
 }

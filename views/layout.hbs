@@ -1,23 +1,36 @@
-<!-- this is index.html -->
+<!-- index.html -->
 
 <!DOCTYPE html>
 <html>
   <head>
     <title>{{title}}</title>
+      <link rel="stylesheet" href="/stylesheets/foundation.css" type="text/css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/master.css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <link  rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400,600' />
   </head>
   <body>
-    <a href="/">Home</a>
 
-    <h1>Anything under me is being rendered dynamically from the route</h1>
+      <img src="images/{{images.logo}}" alt="" id="logo">
 
-    <!-- triple handle bars are a shorthand for a router-view -->
-    {{{body}}}
+      {{{body}}}
 
-    <h3>I live under the router view</h3>
+      <footer>
+        <p class="copy float-left">
+			    &copy; {{text.copy}}
+		    </p>
+        <ul class="float-right" id="socialMedia">
+          <li><a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a></li>
+          <li><a href="https://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a></li>
+      </ul>
+      </footer>
 
-    <a href="/user1">User 1</a>
-    <a href="/user2">User 2</a>
+    <script src="/javascripts/vendor/jquery.js"></script>
+    <script src="/javascripts/vendor/what-input.js"></script>
+    <script src="/javascripts/vendor/foundation.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/main.js"></script>
   </body>
 </html>
